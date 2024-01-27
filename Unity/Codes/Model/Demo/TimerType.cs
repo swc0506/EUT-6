@@ -7,5 +7,8 @@
         public const int AITimer = 1002;
         public const int SessionAcceptTimeout = 1003;
         // 不能超过10000
+
+        public const int AccountSessionCheckTimeout = 1004;
+        public const int PlayerOfflineOutTime = 1005;
     }
 }

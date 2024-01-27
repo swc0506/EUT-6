@@ -1,4 +1,4 @@
-﻿namespace ET
+namespace ET
 {
     public enum WindowID
     {
@@ -8,5 +8,7 @@
         WindowID_Login,     //登录界面
         WindowID_RedDot,   //红点测试界面
         WindowID_Helper,   //提示界面
-    }
+    	WindowID_Server,   //选择服务器
+		WindowID_Role,     //选择角色
+	}
 }
