@@ -10,6 +10,8 @@ namespace ET
         private async ETTask RunAsync(EventType.SceneChangeStart args)
         {
             Scene currentScene = args.ZoneScene.CurrentScene();
+
+            args.ZoneScene.GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Lobby);
             
             // 加载场景资源
             await ResourcesComponent.Instance.LoadBundleAsync($"{currentScene.Name}.unity3d");

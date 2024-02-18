@@ -1,4 +1,6 @@
-﻿namespace ET
+﻿using UnityEditor.UI;
+
+namespace ET
 {
     public static class UnitHelper
     {
@@ -13,6 +15,12 @@
         {
             PlayerComponent playerComponent = currentScene.Parent.Parent.GetComponent<PlayerComponent>();
             return currentScene.GetComponent<UnitComponent>().Get(playerComponent.MyId);
+        }
+
+        public static NumericComponent GetMyUnitNumericComponent(Scene cuurentScene)
+        {
+            NumericComponent numericComponent = GetMyUnitFromCurrentScene(cuurentScene).GetComponent<NumericComponent>();
+            return numericComponent;
         }
     }
 }
